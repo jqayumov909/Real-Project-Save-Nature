@@ -60,8 +60,6 @@ header .container .nav-list ul {
 header .container .nav-list ul:hover {
   border-color:rgba(0, 0, 0, 0.392);
   outline: 3px solid rgba(6, 133, 6, 0.143);
-}
-header .container .nav-list ul:hover {
   background-color: rgba(165, 209, 165, 0.457);
 }
 header .container .nav-list ul li {
@@ -206,14 +204,27 @@ text-shadow: 5px 5px 30px white;
 
 /* Solutions section end */
 
-
+#support {
+  width: 100%;
+  height: 40px;
+}
 /* Footer start */
 footer {
   margin: 20px 10px;
 }
 footer .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+footer .text-center {
+  display: block;
+  font-size: xx-large;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: rgba(0, 0, 255, 0.742);
+  color: white;
+  text-align: center;
 }
 footer .container form {
   width: 400px;
@@ -253,4 +264,101 @@ footer .container form .submit:hover {
 footer .container form .submit:active {
   background-color: rgb(10, 125, 10);
 }
+footer .container .media-icons {
+  width: 30%;
+  height: 105px;
+  /* background-color: rgba(62, 62, 61, 0.267); */
+  margin: 30px 30px 0 0;
+}
+footer .container .media-icons .media-icons-title {
+  background-color: rgb(33, 33, 37);
+  color: white;
+  font-size: large;
+  padding: 10px;
+  text-align: center;
+}
+footer .container .media-icons a img {
+  width: 50px;
+  height: 50px;
+  margin: 5px 9px 0 9px;
+}
+footer .container .media-icons a img:hover {
+  background-color: rgb(79, 78, 78);
+  border-radius: 20px;
+}
 /* Footer end */
+/* Media Responsive start */
+
+@media only screen and (max-width: 1216px) {
+  header .container .nav-list ul{
+    margin: 2px 5px;
+  }
+  header .container .nav-list ul li {
+    margin: 0 5px;
+    padding: 0 5px;
+  }
+  header .container .nav-list ul li a{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 887px) {
+  header .container {
+    display: flex;
+    justify-content: center;
+  }
+  header .container .nav-list {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1201px) {
+  #free-space {
+  width: 100%;
+  height: 80px;
+  background-color: #ebe5e5fd;
+}
+}
+
+@media only screen and (min-width: 1280px) {
+  header .container .logo-img {
+    margin-left: 7%;
+    margin-right: 0;
+  }
+  header .container .header-text {
+    margin-right: 7%;
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 1380px) {
+  header .container .logo-img {
+    margin-left: 10%;
+    margin-right: 0;
+  }
+  header .container .header-text {
+    margin-right: 10%;
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 1470px) {
+  header .container .logo-img {
+    margin-left: 12%;
+    margin-right: 0;
+  }
+  header .container .header-text {
+    margin-right: 12%;
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 1530px) {
+  header .container .logo-img {
+    margin-left: 14%;
+    margin-right: 0;
+  }
+  header .container .header-text {
+    margin-right: 14%;
+    margin-left: 0;
+  }
+}
+
+
+/* Media Responsive end */
